@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'fights#index'
   get 'fights/index'
+  
   get '/starwars', to: 'star_wars#index'
   put '/starwars/:id', to: 'star_wars#update'
   patch '/starwars/:id', to: "star_wars#update", as: 'update_starwars'
